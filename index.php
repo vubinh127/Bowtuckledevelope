@@ -186,9 +186,9 @@
                         <div class="service-icon">
                             <i class="fa fa-leaf"></i>
                         </div>
-                        <h3><a target="_blank" href="programmingdemo.php">Các ngôn ngữ</a></h3>
+                        <h3><a target="_blank" href="programmingdemo.php">Các môn học</a></h3>
                         <p>
-                            Bạn có thể tìm các ngôn ngữ cần học tại đây
+                            Bạn có thể tìm các môn học cần học tại đây
                         </p>
                     </div>
                 </div>
@@ -230,39 +230,27 @@
             <div class="row no-gutters">
                 <div class="col-md-3 col-sm-3 col-xs-3">
                     <div class="img-wrapper">
-                        <a href="img/work1.png" title="this is a sky image">
-                            <img src="img/work1.png" class="img-responsive">
-                        </a>
-
+                        <img src="img/work1.png" class="img-responsive">
                     </div>
 
                 </div>
 
                 <div class="col-md-3 col-sm-3 col-xs-3">
                     <div class="img-wrapper">
-                        <a href="img/work2.png" title="this is a sky image">
                             <img src="img/work2.png" class="img-responsive">
-                        </a>
-
                     </div>
-
                 </div>
 
                 <div class="col-md-3 col-sm-3 col-xs-3">
                     <div class="img-wrapper">
-                        <a href="img/work3.png" title="this is a sky image">
                             <img src="img/work3.png" class="img-responsive">
-                        </a>
-
                     </div>
 
                 </div>
 
                 <div class="col-md-3 col-sm-3 col-xs-3">
                     <div class="img-wrapper">
-                        <a href="img/work4.png" title="this is a sky image">
                             <img src="img/work4.png" class="img-responsive">
-                        </a>
 
                     </div>
 
@@ -277,104 +265,46 @@
 
                 <div class="col-md-3 col-sm-3 col-xs-3">
                     <div class="img-wrapper">
-                        <a href="img/work5.png" title="this is a sky image">
                             <img src="img/work5.png" class="img-responsive">
-                        </a>
-
                     </div>
 
                 </div>
 
                 <div class="col-md-3 col-sm-3 col-xs-3">
                     <div class="img-wrapper">
-                        <a href="img/work6.png" title="this is a sky image">
                             <img src="img/work6.png" class="img-responsive">
-                        </a>
-
                     </div>
 
                 </div>
 
                 <div class="col-md-3 col-sm-3 col-xs-3">
                     <div class="img-wrapper">
-                        <a href="img/work7.png" title="this is a sky image">
                             <img src="img/work7.png" class="img-responsive">
-                        </a>
-
                     </div>
 
                 </div>
 
                 <div class="col-md-3 col-sm-3 col-xs-3">
                     <div class="img-wrapper">
-                        <a href="img/work8.png" title="this is a sky image">
                             <img src="img/work8.png" class="img-responsive">
-                        </a>
 
                     </div>
 
                 </div>
-
-
-
-                <!---second row ends-->
 
             </div>
-
-
-
     </section>
-
-    <!---Our Services Section Ends------->
-
-    <!-- introduction video section starts -->
-
-    <!-- 	<br><br><br><br>
-
-		<section class="header7 cid-rjrjygOfd1" id="header7-3">
-
-    
-		    <div class="container">
-		        <div class="media-container-row">
-
-		            <div class="media-content align-right">
-		                <h1 class="mbr-section-title mbr-white pb-3 mbr-fonts-style display-1">
-		                    Intro with Video
-		                </h1>
-		                <div class="mbr-section-text mbr-white pb-3">
-		                    <p class="mbr-text mbr-fonts-style display-5">
-		                        Intro with background color, paddings and a video on the right. Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface.
-		                    </p>
-		                </div>
-		                <div class="mbr-section-btn">
-		                        <a class="btn btn-md btn-primary display-4" href="https://mobirise.co">LEARN MORE</a>
-		                        <a class="btn btn-md btn-white-outline display-4" href="https://mobirise.co">LIVE DEMO</a>
-		                </div>
-		            </div>
-
-		            <div class="mbr-figure" style="width: 100%;"><iframe class="mbr-embedded-video" src="https://www.youtube.com/embed/uNCr7NdOJgw?rel=0&amp;amp;showinfo=0&amp;autoplay=0&amp;loop=0" width="1280" height="720" frameborder="0" allowfullscreen></iframe></div>
-
-		        </div>
-    	</div>
-		</section> -->
-
-
-
-
-    <!-- =============================================================================================================================== -->
-    <!---FAQs Section Start------->
 
     <br><br><br>
     <section class="faq" id="myfaq">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h2><b>GENERAL FAQs</b></h2>
+                    <h2><b>FAQs</b></h2>
                     <div class="sub-heading">
                         <p>
-                            you can ask the regarding the issues.we will <br>solve that together for sure
+                            Giải đáp mọi thắc mắc của bạn
                         </p>
-
                     </div>
                 </div>
 
@@ -385,18 +315,18 @@
                 <div class="col-md-7">
                     <div class="panel-group" id="accordian">
                         <?php 
-									$con=mysqli_connect('localhost','root');
-									if (!$con) {
-										die('connection failed'.mysqli_connect_error());
-									}
+                            $con=mysqli_connect('localhost','root');
+                            if (!$con) {
+                                die('connection failed'.mysqli_connect_error());
+                            }
 
-									mysqli_select_db($con,'uniquedeveloper');
+                            mysqli_select_db($con,'uniquedeveloper');
 
-									$sql="select * from faq";
-									$result=mysqli_query($con,$sql);
-									while ($row=mysqli_fetch_array($result))
-									{
-								?>
+                            $sql="select * from faq";
+                            $result=mysqli_query($con,$sql);
+                            while ($row=mysqli_fetch_array($result))
+                            {
+                        ?>
 
                         <div class="panel panel-default">
                             <div class="panel-heading" id="headingOne">
@@ -419,8 +349,7 @@
                         <div class="panel panel-default">
                             <div class="panel-heading" id="headingTwo">
                                 <h4 class="panel-title">
-                                    <a href="#collapseTwo" class="collapsed" data-toggle="collapse"
-                                        data-parent="#accordian">How does it works ?</a>
+                                    <a href="#collapseTwo" class="collapsed" data-toggle="collapse" data-parent="#accordian">Nó hoạt động như nào ?</a>
                                 </h4>
                             </div>
                             <div id="collapseTwo" class="panel-collapse collapse" aria-labelledby="headingTwo">

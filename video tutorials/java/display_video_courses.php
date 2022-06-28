@@ -9,6 +9,8 @@ include "../../admin/includes/navbar.php";
 
 <head>
     <title>Bowtuckle</title>
+    <!----favicon setting-->
+    <link rel="shortcut icon" type="text/css" href="img/mylogo.png">
     <style type="text/css">
     .card-body {
         border-style: solid !important;

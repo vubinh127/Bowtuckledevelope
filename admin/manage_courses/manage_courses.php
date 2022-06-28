@@ -66,7 +66,7 @@ $course=$courses->display_courses();    //calling display_courses() method from 
     }
 
 
-	
+
     /***
 Bootstrap4 Card with Tabs by @mdeuerlein
 ***/
@@ -169,7 +169,8 @@ Bootstrap4 Card with Tabs by @mdeuerlein
                     </li>
                     <li class="list-group-item bg-dark"><a href="../manage_videos/manage_videos.php">Quản lý video</a>
                     </li>
-                    <li class="list-group-item bg-dark"><a href="../manage_cmt/manage_cmt.php">Quản lý bình luận</a></li>
+                    <li class="list-group-item bg-dark"><a href="../manage_cmt/manage_cmt.php">Quản lý bình luận</a>
+                    </li>
                     <li class="list-group-item bg-dark"><a href="../manage_user/manage_user.php">Quản lý người dùng</a>
                     </li>
                     <li class="list-group-item bg-dark"><a href="../../login.php">Đăng xuất</a></li>
@@ -183,7 +184,7 @@ Bootstrap4 Card with Tabs by @mdeuerlein
                         <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#manage_course">Quản lý ngôn ngữ</a>
+                        <a class="nav-link" data-toggle="tab" href="#manage_course">Quản lý môn học</a>
                     </li>
 
                 </ul>
@@ -191,7 +192,7 @@ Bootstrap4 Card with Tabs by @mdeuerlein
                 <div class="tab-content">
                     <div class="tab-pane container active" id="home">
                         <div class="card-header mt-3 mr-5 bg-white text-info border-0 shadow card1"
-                            style="width: 1050px; box-shadow: 1px 1px 1px 1px #ccc"><b>Ngôn ngữ của bạn</b></div><br>
+                            style="width: 1050px; box-shadow: 1px 1px 1px 1px #ccc"><b>Môn học của bạn</b></div><br>
                         <div class="row">
 
                             <?php foreach ($course as $course_list) { ?>
@@ -200,27 +201,21 @@ Bootstrap4 Card with Tabs by @mdeuerlein
                                 <img class="card-img-top" src="../../<?php echo $course_list['language_image'] ?>"
                                     alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title" style="color:black;"><?php echo $course_list['language_name']; ?> <a
-                                            href="edit_topics.php?course_name=<?php echo $course_list['language_name']; ?>"
-                                            class="h6 text-info float-right">Chỉnh sửa <i
-                                                class="fa fa-pencil ml-1"></i></a></h5>
-                                    <p class="card-text" style="color:black;"><?php echo $course_list['language_description']; ?></p>
-
-                                    <!--  <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                    <h5 class="card-title" style="color:black;">
+                                        <?php echo $course_list['language_name']; ?> 
+                                            <a href="edit_topics.php?course_name=<?php echo $course_list['language_name']; ?>" class="h6 text-info float-right">Chỉnh sửa 
+                                                <i class="fa fa-pencil ml-1"></i>
+                                            </a>
+                                    </h5>
+                                    <p class="card-text" style="color:black;">
+                                        <?php echo $course_list['language_description']; ?></p>
                                 </div>
                             </div>
-
                             <?php } ?>
-
-
                         </div>
-
-                        <!-- ============================================================================================================ -->
-
-                        <!-- php code to display modal if status variable is set -->
                         <?php 
 
-	if ( isset($_GET['status']) and $_GET['status']=="added")      //first if condition for course added
+	if ( isset($_GET['status']) and $_GET['status']=="added")     
 	{
 		echo '<div class="col-md-4 mt-5">
 				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
@@ -255,7 +250,7 @@ Bootstrap4 Card with Tabs by @mdeuerlein
 		}
 
 
-	if ( isset($_GET['status']) and $_GET['status']=="deleted")    //second if condition for course deleted
+	if ( isset($_GET['status']) and $_GET['status']=="deleted")    
 	{
 		echo '<div class="col-md-4 mt-5">
 				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
@@ -291,7 +286,7 @@ Bootstrap4 Card with Tabs by @mdeuerlein
 
 
 
-	if ( isset($_GET['status']) and $_GET['status']=="updated")    //second if condition for course deleted
+	if ( isset($_GET['status']) and $_GET['status']=="updated")   
 	{
 		echo '<div class="col-md-4 mt-5">
 				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
@@ -326,7 +321,7 @@ Bootstrap4 Card with Tabs by @mdeuerlein
 			}
 	 ?>
 
-            </div>
+                    </div>
 
                     <div class="tab-pane container fade" id="manage_course">
                         <center>
@@ -351,7 +346,7 @@ Bootstrap4 Card with Tabs by @mdeuerlein
 
                                     <div class="tab-content" id="myTabContent">
 
-									<!-- Thêm môn học  -->
+                                        <!-- Thêm môn học  -->
                                         <div class="tab-pane fade show active p-3" id="one" role="tabpanel"
                                             aria-labelledby="one-tab">
 
@@ -359,7 +354,7 @@ Bootstrap4 Card with Tabs by @mdeuerlein
 
                                                 <div class="card" style="box-shadow: 2px 2px 2px 2px #dfdfdf;">
                                                     <div class="card-header bg-primary text-light p-2 cardh2">
-                                                        <h3>Thêm ngôn ngữ</h3>
+                                                        <h3>Thêm môn học</h3>
                                                     </div>
 
                                                     <div class="card-body small" ">
@@ -368,15 +363,14 @@ Bootstrap4 Card with Tabs by @mdeuerlein
                                                         <div class="form-group">
                                                             <label for="email">Tên :</label>
                                                             <input type="text" class="form-control" id="c_name"
-                                                                placeholder="Enter Course Name" name="course_name">
+                                                                placeholder="Nhập tên môn học" name="course_name">
                                                             <span id="name_error"
                                                                 class="text-danger font-weight-bold"></span>
                                                         </div>
                                                         <div class="form-group">
                                                             <label for="pwd">Mô tả</label>
                                                             <input type="text" class="form-control" id="c_desc"
-                                                                placeholder="Enter Course Description"
-                                                                name="course_desc">
+                                                                placeholder="Nhập mô tả môn học" name="course_desc">
                                                             <span id="desc_error"
                                                                 class="text-danger font-weight-bold"></span>
                                                         </div>
@@ -384,7 +378,7 @@ Bootstrap4 Card with Tabs by @mdeuerlein
                                                         <div class="form-group">
                                                             <label for="pwd">Ảnh</label>
                                                             <input type="file" class="form-control" id="c_img"
-                                                                placeholder="Enter Course Image" name="course_image">
+                                                                placeholder="Tải ảnh" name="course_image">
                                                             <span id="image_error"
                                                                 class="text-danger font-weight-bold"></span>
                                                         </div>
@@ -400,9 +394,9 @@ Bootstrap4 Card with Tabs by @mdeuerlein
                                             </div>
                                         </div>
 
-									<!-- Cập nhật môn học  -->
+                                        <!-- Cập nhật môn học  -->
 
-										<div class="tab-pane fade p-3" id="two" role="tabpanel"
+                                        <div class="tab-pane fade p-3" id="two" role="tabpanel"
                                             aria-labelledby="two-tab">
 
                                             <div class="card-body col-md-12">
@@ -420,15 +414,16 @@ Bootstrap4 Card with Tabs by @mdeuerlein
 
                                                             <div class="form-group">
 
-                                                                <label for="exampleFormControlSelect1">Chọn ngôn ngữ :</label>
+                                                                <label for="exampleFormControlSelect1">Chọn ngôn ngữ
+                                                                    :</label>
                                                                 <select class="form-control"
                                                                     id="exampleFormControlSelect1"
                                                                     name="selected-course-to-update">
 
                                                                     <?php  foreach ($course as $course_list) {	?>
-																		<option>
-																			<?php echo  $course_list['language_name']; ?>
-																		</option>
+                                                                    <option>
+                                                                        <?php echo  $course_list['language_name']; ?>
+                                                                    </option>
                                                                     <?php } ?>
 
                                                                 </select>
@@ -438,8 +433,7 @@ Bootstrap4 Card with Tabs by @mdeuerlein
                                                             <div class="form-group">
                                                                 <label for="pwd">Mô tả</label>
                                                                 <input type="text" class="form-control" id="c_desc"
-                                                                    placeholder="Enter Course Description"
-                                                                    name="course_desc">
+                                                                    placeholder="Nhập mô tả môn học" name="course_desc">
                                                                 <span id="desc_error"
                                                                     class="text-danger font-weight-bold"></span>
                                                             </div>
@@ -447,8 +441,7 @@ Bootstrap4 Card with Tabs by @mdeuerlein
                                                             <div class="form-group">
                                                                 <label for="pwd">Ảnh</label>
                                                                 <input type="file" class="form-control" id="c_img"
-                                                                    placeholder="Enter Course Image"
-                                                                    name="course_image">
+                                                                    placeholder="Tải ảnh" name="course_image">
                                                                 <span id="image_error"
                                                                     class="text-danger font-weight-bold"></span>
                                                             </div>
@@ -463,8 +456,8 @@ Bootstrap4 Card with Tabs by @mdeuerlein
                                                 </div>
                                             </div>
                                         </div>
-										
-										<!-- Xóa môn học  -->
+
+                                        <!-- Xóa môn học  -->
                                         <div class="tab-pane fade p-3" id="three" role="tabpanel"
                                             aria-labelledby="three-tab">
 
@@ -477,22 +470,22 @@ Bootstrap4 Card with Tabs by @mdeuerlein
                                                     <div class="card-body small" ">
 
 														<form action=" course_add.php" method="post" enctype="multipart/form-data">
-															<div class="form-group">
-																<label for="exampleFormControlSelect1">Chọn ngôn ngữ</label>
-																<select class="form-control" id="exampleFormControlSelect1"
-																	name="selected_course">
-																	<?php  foreach ($course as $course_list) { ?>
-																		<option><?php echo  $course_list['language_name']; ?>
-																		</option>
-																	<?php } ?>
-																</select>
-															</div>
+                                                        <div class="form-group">
+                                                            <label for="exampleFormControlSelect1">Chọn ngôn ngữ</label>
+                                                            <select class="form-control" id="exampleFormControlSelect1"
+                                                                name="selected_course">
+                                                                <?php  foreach ($course as $course_list) { ?>
+                                                                <option><?php echo  $course_list['language_name']; ?>
+                                                                </option>
+                                                                <?php } ?>
+                                                            </select>
+                                                        </div>
 
-															<div class="float-left">
-																<button type="submit" class="btn btn-danger"
-																	name="btn-delete-course">Xóa</button>
-															</div>
-														</form>
+                                                        <div class="float-left">
+                                                            <button type="submit" class="btn btn-danger"
+                                                                name="btn-delete-course">Xóa</button>
+                                                        </div>
+                                                        </form>
 
                                                     </div>
                                                 </div>
@@ -504,7 +497,7 @@ Bootstrap4 Card with Tabs by @mdeuerlein
                                 </div>
                         </center>
                     </div>
- 
+
                     <div class="tab-pane container fade" id="menu2">
 
                     </div>
@@ -524,22 +517,23 @@ Bootstrap4 Card with Tabs by @mdeuerlein
         var desc = document.getElementById('c_desc').value;
         var img = document.getElementById('c_img').value;
         if (name == "") {
-            document.getElementById('name_error').innerHTML = "** please enter the course name";
+            document.getElementById('name_error').innerHTML = "** Nhập tên môn học";
             return false;
 
         }
 
         if (desc == "") {
-            document.getElementById('desc_error').innerHTML = "** please enter the course descsription";
+            document.getElementById('desc_error').innerHTML = "** Nhập mô tả môn học";
             return false;
 
         }
         if (img == "") {
-            document.getElementById('image_error').innerHTML = "** please choose an image";
+            document.getElementById('image_error').innerHTML = "** Chọn ảnh tượng chưng khóa học";
             return false;
 
         }
     }
+
     function display_modal() {
 
     }
@@ -547,7 +541,6 @@ Bootstrap4 Card with Tabs by @mdeuerlein
     $(window).on('load', function() {
         $('#myModal').modal('show');
     });
-
     </script>
 
 

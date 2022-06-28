@@ -10,6 +10,8 @@ include "../../admin/includes/navbar.php";
 <head>
     <title>Bowtuckle</title>
 
+    <!----favicon setting-->
+    <link rel="shortcut icon" type="text/css" href="img/mylogo.png">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 
@@ -47,13 +49,13 @@ include "../../admin/includes/navbar.php";
 </head>
 
 <body>
-
+    
     <br><br><br>
     <div class="container-fluid position-relative">
         <center style="height: 50px; background-color: #aeaeaee0; ">
             <strong class="text-white h3" style="">Xem video <?php echo $_GET['course_name']; ?> miễn phí</strong>
         </center><br><br>
-
+        <button class="btn btn-primary" onclick="location.href='./display_video_courses.php'">Return</button>
         <div class="row">
 
 
@@ -77,7 +79,7 @@ include "../../admin/includes/navbar.php";
 
                     <div class="card-body shadow" style="background-color: #f1f1f1;">
                         <!--  <h5 class="card-title"><?php echo $row['course_name']; ?></h5> -->
-                        <p class="card-text"><?php echo $row['video_name']; ?></p>
+                        <p class="card-text" style="color:black;"><?php echo $row['video_name']; ?></p>
                         <a href="java_videos.php?video_id=<?php echo $row['video_id'] ?>&course_name=<?php echo $row['course_name'] ?>"
                             class="btn btn-primary border-0 ">watch videos</a>
                     </div>
