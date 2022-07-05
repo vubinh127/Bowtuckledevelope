@@ -66,16 +66,6 @@ $quiz=new manage_quiz_class;			// creating object of  manage_courses_class.php
 
     }
 
-
-
-    /***
-Bootstrap4 Card with Tabs by @mdeuerlein
-***/
-
-    /***
-Bootstrap4 Card with Tabs by @mdeuerlein
-***/
-
     body {
         background: #FC354C;
         /* fallback for old browsers */
@@ -543,35 +533,35 @@ Bootstrap4 Card with Tabs by @mdeuerlein
 
                     <div class="form-group">
                         <label for="text">Đáp án 1 :</label>
-                        <input type="text" class="form-control" name="opt1" placeholder="Enter option 1">
+                        <input type="text" class="form-control" name="opt1" placeholder="Nhập đáp án 1">
                     </div>
 
                     <div class="form-group">
                         <label for="text">Đáp án 2 :</label>
-                        <input type="text" class="form-control" name="opt2" placeholder="Enter option 2">
+                        <input type="text" class="form-control" name="opt2" placeholder="Nhập đáp án 2">
                     </div>
 
 
                     <div class="form-group">
                         <label for="text">Đáp án 3 :</label>
-                        <input type="text" class="form-control" name="opt3" placeholder="Enter option 3">
+                        <input type="text" class="form-control" name="opt3" placeholder="Nhập đáp án 3">
                     </div>
 
                     <div class="form-group">
                         <label for="text">Đáp án 4 :</label>
-                        <input type="text" class="form-control" name="opt4" placeholder="Enter option 4">
+                        <input type="text" class="form-control" name="opt4" placeholder="Nhập đáp án 4">
                     </div>
 
                     <div class="form-group">
                         <label for="text">Câu trả lời đúng :</label>
                         <input type="text" class="form-control" name="answer"
-                            placeholder="Enter the correct answer">
+                            placeholder="Nhập câu trả lời đúng">
                     </div>
 
                     <div class="form-group">
                         <label for="exampleFormControlSelect1">Chọn môn học</label>
                         <select class="form-control" id="exampleFormControlSelect1" name="cat">
-                            <option class="active">Choose course</option>
+                            <option class="active">Chọn môn học</option>
                             <?php 
                                 foreach ($quiz_list as $courses) 
                                 {
@@ -621,33 +611,15 @@ Bootstrap4 Card with Tabs by @mdeuerlein
 
         }
     }
-    // javascript validation function
-    // =============================================================================================================
-
-
-    // =============================================================================================================
-
-    // javascript modal function called on page load
 
     function display_modal() {
 
-
-
     }
-
-    // =============================================================================================================
-
-
-
-    // =============================================================================================================
-
-    // javascript modal function called on page load
 
     $(window).on('load', function() {
         $('#myModal').modal('show');
     });
-    // javascript validation function
-    // =============================================================================================================
+    
     </script>
 
 

@@ -230,7 +230,7 @@ Bootstrap4 Card with Tabs by @mdeuerlein
                             <div class="card ml-5 mt-4" style="width: 18rem;">
                                 <img class="card-img-top" src="<?php echo $video_list['image'] ?>" alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title"><?php echo $video_list['course_name']; ?> <a
+                                    <h5 class="card-title" style="color:black;"><?php echo $video_list['course_name']; ?> <a
                                             href="edit_videos.php?course_name=<?php echo $video_list['course_name']; ?>"
                                             class="h6 text-info float-right">Xem video <i
                                                 class="fa fa-pencil ml-1"></i></a></h5>

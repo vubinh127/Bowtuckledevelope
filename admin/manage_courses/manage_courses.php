@@ -186,16 +186,15 @@ Bootstrap4 Card with Tabs by @mdeuerlein
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="tab" href="#manage_course">Quản lý môn học</a>
                     </li>
-
                 </ul>
 
                 <div class="tab-content">
                     <div class="tab-pane container active" id="home">
                         <div class="card-header mt-3 mr-5 bg-white text-info border-0 shadow card1"
                             style="width: 1050px; box-shadow: 1px 1px 1px 1px #ccc"><b>Môn học của bạn</b></div><br>
-                        <div class="row">
+                            <div class="row">
 
-                            <?php foreach ($course as $course_list) { ?>
+                                <?php foreach ($course as $course_list) { ?>
 
                             <div class="card ml-5 mt-4" style="width: 18rem;">
                                 <img class="card-img-top" src="../../<?php echo $course_list['language_image'] ?>"
@@ -218,9 +217,9 @@ Bootstrap4 Card with Tabs by @mdeuerlein
 	if ( isset($_GET['status']) and $_GET['status']=="added")     
 	{
 		echo '<div class="col-md-4 mt-5">
-				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-				  Open modal
-				</button>
+				// <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+				//   Open modal
+				// </button>
 
 				<!-- The Modal -->
 				<div class="modal fade" id="myModal">
@@ -229,12 +228,12 @@ Bootstrap4 Card with Tabs by @mdeuerlein
 
 				      <!-- Modal Header -->
 				      <div class="modal-header">
-				        <h4 class="modal-title">Message</h4>
+				        <h4 class="modal-title" style="color:black;">Message</h4>
 				        <button type="button" class="close" data-dismiss="modal">&times;</button>
 				      </div>
 
 				      <!-- Modal body -->
-				      <div class="modal-body">
+				      <div class="modal-body" style="color:black;">
 				        Thêm tài liệu thành công
 				      </div>
 
@@ -264,12 +263,12 @@ Bootstrap4 Card with Tabs by @mdeuerlein
 
 				      <!-- Modal Header -->
 				      <div class="modal-header">
-				        <h4 class="modal-title">Message</h4>
+				        <h4 class="modal-title"  style="color:black;">Message</h4>
 				        <button type="button" class="close" data-dismiss="modal">&times;</button>
 				      </div>
 
 				      <!-- Modal body -->
-				      <div class="modal-body">
+				      <div class="modal-body" style="color:black;">
 				        	Xóa tài liệu thành công
 				      </div>
 
@@ -300,12 +299,12 @@ Bootstrap4 Card with Tabs by @mdeuerlein
 
 				      <!-- Modal Header -->
 				      <div class="modal-header">
-				        <h4 class="modal-title">Message</h4>
+				        <h4 class="modal-title"  style="color:black;">Message</h4>
 				        <button type="button" class="close" data-dismiss="modal">&times;</button>
 				      </div>
 
 				      <!-- Modal body -->
-				      <div class="modal-body">
+				      <div class="modal-body"  style="color:black;">
 				        	Cập nhật tài liệu thành công
 				      </div>
 
@@ -359,34 +358,34 @@ Bootstrap4 Card with Tabs by @mdeuerlein
 
                                                     <div class="card-body small" ">
 
-				  <form action=" course_add.php" method="post" enctype="multipart/form-data" onsubmit="return validation()">
-                                                        <div class="form-group">
-                                                            <label for="email">Tên :</label>
-                                                            <input type="text" class="form-control" id="c_name"
-                                                                placeholder="Nhập tên môn học" name="course_name">
-                                                            <span id="name_error"
-                                                                class="text-danger font-weight-bold"></span>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <label for="pwd">Mô tả</label>
-                                                            <input type="text" class="form-control" id="c_desc"
-                                                                placeholder="Nhập mô tả môn học" name="course_desc">
-                                                            <span id="desc_error"
-                                                                class="text-danger font-weight-bold"></span>
-                                                        </div>
+				                                        <form action=" course_add.php" method="post" enctype="multipart/form-data" onsubmit="return validation()">
+                                                            <div class="form-group">
+                                                                <label for="email">Tên :</label>
+                                                                <input type="text" class="form-control" id="c_name"
+                                                                    placeholder="Nhập tên môn học" name="course_name">
+                                                                <span id="name_error"
+                                                                    class="text-danger font-weight-bold"></span>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="pwd">Mô tả</label>
+                                                                <input type="text" class="form-control" id="c_desc"
+                                                                    placeholder="Nhập mô tả môn học" name="course_desc">
+                                                                <span id="desc_error"
+                                                                    class="text-danger font-weight-bold"></span>
+                                                            </div>
 
-                                                        <div class="form-group">
-                                                            <label for="pwd">Ảnh</label>
-                                                            <input type="file" class="form-control" id="c_img"
-                                                                placeholder="Tải ảnh" name="course_image">
-                                                            <span id="image_error"
-                                                                class="text-danger font-weight-bold"></span>
-                                                        </div>
+                                                            <div class="form-group">
+                                                                <label for="pwd">Ảnh</label>
+                                                                <input type="file" class="form-control" id="c_img"
+                                                                    placeholder="Tải ảnh" name="course_image">
+                                                                <span id="image_error"
+                                                                    class="text-danger font-weight-bold"></span>
+                                                            </div>
 
-                                                        <div class="">
-                                                            <button type="submit" class="btn btn-primary"
-                                                                name="btn_add">Thêm</button>
-                                                        </div>
+                                                            <div class="">
+                                                                <button type="submit" class="btn btn-primary"
+                                                                    name="btn_add">Thêm</button>
+                                                            </div>
                                                         </form>
 
                                                     </div>

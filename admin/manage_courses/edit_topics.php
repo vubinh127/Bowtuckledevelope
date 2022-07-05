@@ -138,21 +138,12 @@
                         </tr>
 
                         <?php } 
-
-       echo '<button class="btn btn-primary" id="btn-add"><a href="add_new_topic.php?course_name='.$coursename.'" class="text-white">Thêm tài liệu</a></button>';
-
-       	?>
+                            echo '<button class="btn btn-primary" id="btn-add"><a href="add_new_topic.php?course_name='.$coursename.'" class="text-white">Thêm tài liệu</a></button>';
+       	                ?>
                     </table>
                 </div>
-
-
-
-
             </div>
         </div>
     </div>
-
-
     <body>
-
 </html>

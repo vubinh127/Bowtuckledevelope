@@ -12,45 +12,15 @@ session_start();
 
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <title>Bowtuckle</title>
-    <!----Linking google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-
-    <!----font-awsome start-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!----font-awsome ends-->
-
     <!----css file link-->
-
     <link rel="stylesheet" type="text/css" href="css/login.css">
-
     <!----favicon setting-->
     <link rel="shortcut icon" type="text/css" href="img/mylogo.png">
-
-    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <!-- Google Client id to integrate google signin-->
-
-    <meta name="google-signin-client_id"
-        content="808976312783-k901nr0n50did222qa275k0umvn4rpi1.apps.googleusercontent.com">
-
-
-    <!-- Google JavaScript file to integrate google signin-->
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-
-    <!-- Google custom JavaScript file to integrate google signin-->
-    <script type="text/javascript" src="js/google_signin.js"></script>
-
-
-    <!----------email notification-------->
-
     <script type="text/css">
 
     </script>

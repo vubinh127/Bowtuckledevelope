@@ -4,36 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Aleo" rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <title>Bowtuckle</title>
-    <!----Linking google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-
-    <!----font-awsome start-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!----font-awsome ends-->
-
-    <!----css file link-->
-
     <link rel="stylesheet" type="text/css" href="css/signupstyle.css">
-
-    <!----favicon setting-->
     <link rel="shortcut icon" type="text/css" href="img/mylogo.png">
-
-    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <!----------email notification-------->
-
-
 </head>
 
 <body>

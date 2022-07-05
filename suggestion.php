@@ -21,9 +21,7 @@
         $qy="insert into suggestion(email,suggest) values('$email','$message')";
 		mysqli_query($con,$qy);
 		header('location:index.php');
-    }
-	else
-	{
+    } else {
 	
 	}
  ?>

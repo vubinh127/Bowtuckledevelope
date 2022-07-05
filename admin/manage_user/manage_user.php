@@ -164,12 +164,6 @@ Bootstrap4 Card with Tabs by @mdeuerlein
         </div>
     </nav>
 
-    <!-- navigation bar ends -->
-    <!-- ========================================================================================================================== -->
-
-
-
-
     <div class="container-fluid" style="margin-top: 50px;">
         <div class="row">
             <div class="col-sm-2 col-md-2 sidebar badge-dark" style="margin:inherit;" id="sidebar">

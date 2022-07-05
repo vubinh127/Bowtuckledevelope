@@ -5,9 +5,9 @@ include '../classes/manage_quiz_class.php';
 	$con=mysqli_connect('localhost','root');
 	mysqli_select_db($con,'uniquedeveloper');
 	if (!$con)
-	 {
+	{
 		die('unable to coonect to database');
-	 }
+	}
 //================================================================================================================
 
 if (isset($_POST['btn_add_quiz_sub']))
@@ -37,38 +37,33 @@ if (isset($_POST['btn_add_quiz_sub']))
 
  }
 
-
-//================================================================================================================
-
- 		// add a new question code from manage_quiz.php  from tab 3 (add questions) 
-
  
-extract($_POST);
+	extract($_POST);
 
-$quiz=new manage_quiz_class;;
-$ques=htmlentities($question);
-$option1=htmlentities($opt1);
-$option2=htmlentities($opt2);
-$option3=htmlentities($opt3);
-$option4=htmlentities($opt4);
+	$quiz=new manage_quiz_class;;
+	$ques=htmlentities($question);
+	$option1=htmlentities($opt1);
+	$option2=htmlentities($opt2);
+	$option3=htmlentities($opt3);
+	$option4=htmlentities($opt4);
 
-echo "$ques";
-echo "$option1";
-echo "$option2";
-echo "$option3";
-echo "$option4";
+	echo "$ques";
+	echo "$option1";
+	echo "$option2";
+	echo "$option3";
+	echo "$option4";
 
-echo $cat."<br>"; 
+	echo $cat."<br>"; 
 
-$array=[$option1,$option2,$option3,$option4];
-$matchedanswer=array_search($answer,$array);
-echo "answer is".$matchedanswer;
-$query="insert into question_test values('','$ques','$option1','$option2','$option3','$option4','$matchedanswer','$cat')"; //$cat value comes from select name attribute
+	$array=[$option1,$option2,$option3,$option4];
+	$matchedanswer=array_search($answer,$array);
+	echo "answer is".$matchedanswer;
+	$query="insert into question_test values('','$ques','$option1','$option2','$option3','$option4','$matchedanswer','$cat')"; //$cat value comes from select name attribute
 
-// mysqli_query($con,$query);
-if ($quiz->add_quize($query)) 
-{
-	header("location:manage_quiz.php?run=success");
-}
+	// mysqli_query($con,$query);
+	if ($quiz->add_quize($query)) 
+	{
+		header("location:manage_quiz.php?run=success");
+	}
 
  ?>

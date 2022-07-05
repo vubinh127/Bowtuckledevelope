@@ -11,45 +11,20 @@
 
 <head>
     <link href="https://fonts.googleapis.com/css?family=Aleo" rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <title>Bowtuckle</title>
-    <!----magnific popup css file for work section -->
     <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
-
-    <!----owlcarousel css file for our team section -->
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
-
-
-    <!----Linking google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-
-    <!----font-awsome start-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!----font-awsome ends-->
-
-    <!----css file link-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
-
-    <!----favicon setting-->
     <link rel="shortcut icon" type="text/css" href="img/mylogo.png">
-
-    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <!----magnific popup js file for work section -->
     <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-
-    <!----owlcarousel js file for our team section -->
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/owl.carousel.js"></script>
-
-    <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <style type="text/css">
@@ -61,11 +36,8 @@
 
     body {
         background: #FC354C;
-        /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #0ABFBC, #FC354C);
-        /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #0ABFBC, #FC354C);
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         color: white;
     }
     </style>

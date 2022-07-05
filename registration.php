@@ -18,12 +18,9 @@
 
 	$result=mysqli_query($con,$q);
 	$num=mysqli_num_rows($result);
-	if ($num==1)
-	{
+	if ($num == 1){
 		header('location:signup.html');
-	}
-	else
-	{
+	} else {
 		$qy="insert into loginn(username,password,email) values('$name','$pass','$email')";
 		mysqli_query($con,$qy);
 		header('location:login.php');

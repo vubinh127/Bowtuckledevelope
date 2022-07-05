@@ -8,26 +8,12 @@
 
 <head>
     <title>Bowtuckle</title>
-    <!----css file link-->
     <link rel="stylesheet" type="text/css" href="css/programming.css">
-
-    <!----favicon setting-->
     <link rel="shortcut icon" type="text/css" href="img/mylogo.png">
-
-
-    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
-    <!----Linking google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-
-    <!----font-awsome start-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style type="text/css">
@@ -90,10 +76,7 @@
         transition: .22s ease;
     }
 
-    .div1
-
-    /* for title image*/
-        {
+    .div1 {
         margin-top: 10%;
         position: relative;
         height: 500px;
@@ -132,10 +115,10 @@
             <div class="collapse navbar-collapse" id="navi">
                 <!------Navigation menus starts---->
                 <ul class="nav navbar-nav navbar-right">
-                    <li> <a href="">Trang chủ</a></li>
-                    <li> <a href="#myservice_section">Dịch vụ</a></li>
-                    <li> <a href="#work">Works</a></li>
-                    <li> <a href="#myfaq">FAQs</a></li>
+                    <li> <a href="index.php">Trang chủ</a></li>
+                    <li> <a href="index.php#myservice_section">Dịch vụ</a></li>
+                    <li> <a href="index.php#work">Works</a></li>
+                    <li> <a href="index.php#myfaq">FAQs</a></li>
                     <li> <a href="logout.php" id="our-location"
                             class="btn-success"><?php echo $_SESSION['username'];   ?></a></li>
                 </ul>

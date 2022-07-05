@@ -8,16 +8,16 @@ body {
     background-color: red;
 }
 
-
-/*=======================================
-       Navigation Properties start
-==========================================*/
-
 .navbar {
     padding: 12px 0px;
     background-color: #34495e !important;
     border-bottom: none !important;
     transition: all 0.5s ease-in-out;
+}
+
+.sidemenulist{
+    background-color: black;
+    opacity: 85%;
 }
 
 ul li a {
